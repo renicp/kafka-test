@@ -22,8 +22,7 @@ public class KafkaConsumer {
             writer.write(message+"\n");
             writer.close();
         } catch (IOException ex) {
-            // Report
+            System.out.println(ex.getMessage());
         }
-        System.out.println(message);
     }
 }
