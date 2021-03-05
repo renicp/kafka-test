@@ -3,7 +3,7 @@ select u.id, u.username ,u2.username as parent from user u left join user u2 on 
 
 nomor 3:
     func findFirstStringInBracket(str string) string {
-        var res = ""
+        res:=""
         if (len(str) > 0) {
             indexFirstBracketFound := strings.Index(str,"(")
             if indexFirstBracketFound >= 0 {
@@ -12,7 +12,8 @@ nomor 3:
                 indexClosingBracketFound := strings.Index(wordsAfterFirstBracket,")")
                 if indexClosingBracketFound >= 0 {
                     runes := []rune(wordsAfterFirstBracket)
-                    res :=string(runes[1:indexClosingBracketFound-1])                     
+                    res :=string(runes[1:indexClosingBracketFound])  
+                    return res
                 }
             }
         }
