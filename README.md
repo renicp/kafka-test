@@ -14,3 +14,4 @@ run KafkaTestApplication
 
 ## Publish message via WebService
 - `http://localhost:8085`
+- the output would be store at the project 'src/test/file/result.txt'
